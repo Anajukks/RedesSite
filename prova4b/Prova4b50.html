@@ -1,44 +1,169 @@
 <!DOCTYPE html>
-<html lang = "pt-br">
+<html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<title>Steam</title>
-	<link rel="stylesheet" type="text/css" href="prova.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="airbnbcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Aluguéis de Condomínios e Casas de Veraneio - Airbnb</title>
 </head>
 <body>
-	<header class="header"> 
-		<img src="botaost.png" id="int">
-		<img src="logosteam.png" id="logo">
-		<div id="texto">
-			<p>Iniciar sessão</p>
-			<p>|</p>
-			<p>Idioma</p>
-		</div>
-		<div id="menu">
-			<p>LOJA</p>
-			<p>COMUNIDADE</p>
-			<p>SOBRE</p>
-			<p>SUPORTE</p>
-		</div>
-	</header>
-	
-	<div id="body"> 
-		<img src="fundo1.png" id="img1"> 
-		<img src="menu.png" id="menu">
-	</div>
+    <div class="cabeçalho">
+        <img src="airbnblogo.png" class="logo">
+        <div class="barra-de-pesquisa">
+            <p><b>Qualquer lugar</b> | <b>Qualquer semana</b> | Hóspedes?</p>
+            <i class="fa fa-search lupa" aria-hidden="true"></i>
+        </div>
+            <div class="cabeçalho-direita">
+                <p>Seja um anfitrião</p>
+                <i class="fa fa-globe globo" aria-hidden="true"></i>
+                <div class="login">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </div>
+            </div>
+    </div>
 
-	<div id="resto">
-		<p>JOGOS SENDO TRANSMITIDOS AGORA</p>
-		<div id="mover">
-			<img src="jogo1.png">
-			<img src="jogo2.png">
-			<img src="jogo1.png">
-			<img src="jogo2.png">
-			<img src="jogo1.png">
-			<img src="jogo2.png">
-		</div>
-	</div>
+        <br> 
 
-
+        <div class="menu"> <!-- AJ: a div inteira e, dentro (opões-do...), cada quadradinho-->
+            
+            <div class="opçoes-do-menu"><img src="designdif.jpg"><p>Design diferente</p></div> <!-- design diferente-->
+            <div class="opçoes-do-menu"><img src="parq.jpg"><p>Parques nacionais</p></div><!-- parques nacionais-->
+            <div class="opçoes-do-menu"><img src="casas.jpg"><p>Microcasas</p></div><!-- microcasas -->
+            <div class="opçoes-do-menu"><img src="surfe.jpg"><p>Surfe</p></div><!-- surfe -->
+            <div class="opçoes-do-menu"><img src="frente.jpg"><p>Em frente à casa</p></div><!-- em frente à casa -->
+            <div class="opçoes-do-menu"><img src="uau.jpg"></i><p>Uau!</p></div><!-- uau! -->
+            <div class="opçoes-do-menu"><img src="praia.jpg"><p>Praia</p></div> <!-- praia -->
+            <div class="opçoes-do-menu"><img src="pisc.jpg"><p>Piscinas incríveis</p></div><!-- piscinas incriveis -->
+            <div class="opçoes-do-menu"><img src="ilhas.jpg"><p>Ilhas</p></div> <!-- ilhas -->
+            <div class="opçoes-do-menu"><img src="artic.jpg"><p>Ártico</p></div><!-- ártico -->
+            <div class="opçoes-do-menu"><img src="vistasinc.jpg"><p>Vistas incríveis</p></div><!-- Vistas incríveis -->
+            <div class="opçoes-do-menu"><img src="lago.jpg"><p>Na beira do lago</p></div><!-- Na beira do lago -->
+            <!-- <div class="opçoes-do-menu"><img src="cabanas.jpg"><p>Cabanas</p></div> Cabanas -->
+        
+            <div class="menu-avançar opçoes-do-menu">
+                <i class="fa fa-chevron-right seta-avançar" aria-hidden="true"></i>
+            </div>
+            <div class=" opçoes-do-menu">
+                <div class="menu-filtros">
+                    <i class="fa fa-sliders" aria-hidden="true"></i>
+                    <p>Filtros</p>
+                </div>
+            </div>
+        </div>
+<div class="centralizar-ofertas"> <!-- Paloma: para centralizar a div no meio da pagina-->
+    <div class="ofertas">  <!-- Paloma: essa parte foi para fazer o corpo do site, onde eu utilizei uma div maior e dentro dela fiz várias outras divs pequenas para dá classe e estrutura para o site no css-->
+        <div class="casas">  <!-- Paloma: as divs com class chamadas casas foi usada para colocar dentro dela todas as informações de cada quadradrinho-->
+            <img src="aquiairbnb.jpg">
+            <div class="primeira-linha-anuncio">
+                <h3>Stege, Dinarmaca</h3>
+                <i class="fa fa-star estrela" aria-hidden="true"> 4,92</i>
+            </div>
+            <p class="descrição">8.012 km</p>
+            <p class="descrição">13 - 19 de jan.</p>
+            <p><b>R$992</b> noite</p>
+        </div>
+        <div class="casas">
+            <img src="aquiairbnb.jpg">
+            <div class="primeira-linha-anuncio">
+                <h3>Drimnin, Reino Unido</h3>
+                <i class="fa fa-star estrela" aria-hidden="true"> 4,92</i>
+            </div>  
+            <p class="descrição">7.323 km</p>
+            <p class="descrição">4 - 9 de dez.</p>
+            <p><b>R$1.138</b> noite</p>
+        </div>
+        <div class="casas">
+            <img src="aquiairbnb.jpg">
+            <div class="primeira-linha-anuncio">
+                <h3>Ponta Delgada, Portugal</h3>
+                <i class="fa fa-star estrela" aria-hidden="true"> 4,92</i>
+            </div>  
+            <p class="descrição">4.800 km</p>
+            <p class="descrição">15 - 20 de abr.</p>
+            <p><b>R$1.061</b> noite</p>
+        </div>
+        <div class="casas">
+            <img src="aquiairbnb.jpg">
+            <div class="primeira-linha-anuncio">
+                <h3>Marton, Nova Zelândia</h3>
+                <i class="fa fa-star estrela" aria-hidden="true"> 4,92</i>
+            </div> 
+            <p class="descrição">14.041 km</p>
+            <p class="descrição">8 - 13 de dez.</p>
+            <p><b>R$667</b> noite</p>
+        </div>
+        <div class="casas">
+            <img src="aquiairbnb.jpg">
+            <div class="primeira-linha-anuncio">
+                <h3>Nelson, Nova Zelândia</h3>
+                <i class="fa fa-star estrela" aria-hidden="true"> 4,92</i>
+            </div> 
+            <p class="descrição">14.084 km</p>
+            <p class="descrição">9 - 14 de out.</p>
+            <p><b>R$879</b> noite</p>
+        </div>
+        <div class="casas">
+            <img src="aquiairbnb.jpg">
+            <div class="primeira-linha-anuncio">
+                <h3>Salvador, Brasil</h3>
+                <i class="fa fa-star estrela" aria-hidden="true"> 4,92</i>
+            </div> 
+            <p class="descrição">16.014 km</p>
+            <p class="descrição">16 - 21 de nov.</p>
+            <p><b>R$398 </b>noite</p>
+        </div>
+        <div class="casas">
+            <img src="aquiairbnb.jpg">
+            <div class="primeira-linha-anuncio">
+                <h3>Pelkosenniemi, Finlândia</h3>
+                <i class="fa fa-star estrela" aria-hidden="true"> 4,92</i>
+            </div>
+            <p class="descrição">9.369 km</p>
+            <p class="descrição"> 10 - 15 de jan.</p>
+            <p><b>R$787</b> noite</p>
+        </div>
+        <div class="casas">
+            <img src="aquiairbnb.jpg">
+            <div class="primeira-linha-anuncio">
+                <h3>Lac-Beauport, Canadá</h3>
+                <i class="fa fa-star estrela" aria-hidden="true"> 4,92</i>
+            </div>
+            <p class="descrição">6.485 km</p>
+            <p class="descrição">1 - 6 de jul.</p>
+            <p><b>R$1.798</b> noite</p>
+        </div>
+    </div>
+</div>       
+    <div class="rodape-site"> 
+        <div class="rodape-esquerda"> <!-- AJ: aqui é para definir o que vai ficar no lado esquerdo do footer... -->
+            <a class="underline-hover" href="#">2022 Airbnb, Inc.</a>
+            <a href="">·</a>
+            <a class="underline-hover" href="#">Privacidade</a>
+            <a href="">·</a>
+            <a class="underline-hover" href="#">Termos</a>
+            <a href="">·</a>
+            <a class="underline-hover" href="#">Mapa do site</a>
+            <a href="">·</a>
+            <a class="underline-hover" href="#">Informações da empresa</a>
+            <a href="">·</a>
+            <a class="underline-hover" href="#">Destinos</a>
+        </div>
+        <div class="rodape-direita"> <!-- ...e aqui o direito-->
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <a class="underline-hover" href="#"><b>Português(BR)</b></a>
+            <a class="underline-hover" href="#"><b>R$ BRL</b></a>
+            <a class="underline-hover" href="#"><b>Atendimento e recursos</b></a>
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="rodape-celular">
+       <div class="opçoes-rodape-celular"><i class="fa fa-search" aria-hidden="true"><p>Explorar</p></i></div>
+       <div class="opçoes-rodape-celular"><i class="fa fa-heart-o" aria-hidden="true"><p>Favoritos</p></i></div>
+       <div class="opçoes-rodape-celular"><i class="fa fa-user-circle-o" aria-hidden="true"><p>Entrar</p></i></div>
+    </div>
+    <div class="espaço-em-branco"></div> 
 </body>
 </html>
