@@ -1,105 +1,259 @@
-.header {
-	background-color: black;
-	width: 100%;
-	height: 80px;
-	position: absolute;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: : 0px;
-	display: block;
-	top: 0%;
-	left: 0%;
-	z-index: 100; 
+body { /* AJ: retirando a margin e o padding do body para evitar influenciar na pagina*/
+    margin: 0;
+    padding: 0;
+}
+   
+.cabeçalho {
+    height: 90px;
+    display: flex;
+    justify-content: space-between; /*AJ: usei o space pq distribuiria os elementos ao longo do tamanho do cabeçalho*/
+    align-items: center;
+    border-bottom: 2px solid rgb(246, 238, 238);
+}
+
+.cabeçalho-direita  { /*AJ: para agrupar os elementos da direita do cabeçalho e ficar visualmente igual ao site, se nao o space deixaria todos igualmente espaçados*/
+    width: 250px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+   
+.logo {
+    width: 120px;
+    padding-left: 80px;
+}
+   
+.barra-de-pesquisa {
+    border-radius: 30px;
+    border: 1px solid rgb(221, 216, 216);
+    border-bottom: 3px solid rgb(221, 216, 216);
+    width: 420px;
+    display: flex;
+    justify-content: space-between; /*AJ: para ajustar os elementos dentro da barra*/
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 11pt;
+}
+
+.lupa {
+    color: white;
+    background-color: rgb(215, 58, 110);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.login {
+    border-radius: 60px;
+    border: 1px solid rgb(221, 216, 216);
+    padding: 8px;
+    margin-right: 40px;
+}
+
+.menu{ /*AJ: aqui pra baixo é para centralizar a div no meio da tela/ os elementos*/
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 80px; /*80 pq o cabeçalho e as ofertas tbm estao com 80*/
+    padding-right: 80px;
+    overflow-x: scroll; /*para esconder a barrinha só usando o hidden, mas ela tbm n rola pq acho q n tem js*/ 
+
+}
+
+.opçoes-do-menu{
+    width: 100px;
+    /*min-width: 80px;  needs vendor prefixes */
+
+}
+
+.opçoes-do-menu img {
+    width: 30px;
+    opacity: 0.5;
+}
+
+.opçoes-do-menu p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10pt;
+    color: #717171;
 }
 
 
-#logo {
-	position: absolute;
-	width: 10%;
-	height: 70%;
-	top: 15%;
-	left: 15%;
+.menu-avançar, .menu-filtros {
+    border: 0.5px solid rgb(221, 216, 216);
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
 }
 
-#int {
-	position: relative;
-	display: inline-block;
-	left: 65%;
-	width: 7%;
-	height: 35%;
-	top: 10px;
+.menu-filtros {
+    border-radius: 8px;
+    width: 80px;
+    justify-content: space-evenly; /*AJ: evenly para separar os elementos bonitinho*/
 }
 
-#texto p{
-	position: relative;
-	display: inline-block;
-	top: -27px;
-	left: 78%;
-	font-family: Arial;
-	font-size: 12px;
-	color: lightgray;
+.menu-avançar {
+    justify-content: center;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
 }
 
-#menu p {
-	position: relative;
-	display: inline-block;
-	top: -50px;
-	left: 30%;
-	font-family: Arial;
-	font-size: 12px;
-	color: lightgray;
-	padding-left: 7px;
+.centralizar-ofertas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ofertas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #222222;
+    padding: 40px;
 }
 
-#body {
-	position: absolute;
-	background-image: url("back.png"); 
-	top: 10%;
-	left: 0;
-	right: 0;
-	height: 50%;
+.casas {
+    width: 300px;
+    height: 450px;
+   
+}
+.casas img {
+    width: 300px;
+    height: 284px;
+    border-radius: 10px;
+   
+}
+
+.descrição{
+    line-height: 2px;
+    color: #717171;
+}
+
+.primeira-linha-anuncio{
+    display: flex;
+    justify-content: space-between; /*Paloma: Para deixar os "elementos" nos extremos*/
+    align-items: center;
+}
+
+.rodape-site{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid gray; /*AJ: para ficar só a linha em cima, meio que funcionando como uma divisao*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 11pt;
+    position: fixed; /*AJ: para o rodape ficar fixo na tela*/
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+   
+.rodape-site-direita, .rodape-site-esquerda {
+    display: flex;
+    justify-content: space-around;    
+}
+   
+.rodape-site-direita{
+    width: 440px;
+}
+   
+.rodape-site-esquerda{
+    width: 600px;
+    padding-right: 50px;
+}
+   
+.rodape-site a{
+    text-decoration: none;
+    color: #222222;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 11pt;
+}
+   
+.underline-hover:hover { /*Paloma: para quando o usuario passar o mouse por cima...*/
+    text-decoration: underline; /*Paloma: ...deixar sublinhado*/
+}
+
+.espaço-em-branco{
+    height: 50px;
+}
+
+@media only screen and (max-width: 1005px) { /*AJ: ajustando o site para dispositivos com tela de no max 1005px*/
+    .centralizar-ofertas {
+        display: flex;
+        justify-content: center;
+    }
+    .ofertas{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .menu {
+        width: 100%;
+        padding:0;
+    }
+
+    .rodape-site{
+        display: none;
+    }
+
+    .rodape-celular{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #717171;
+    }
+    .opçoes-rodape-celular:hover{
+        color: rgb(223, 79, 103);
+    }
+
+    .barra-de-pesquisa {
+        width: 450px;      
+    }
+
+    .cabeçalho {
+        padding: 10px;
+        border: 0;
+        justify-content: center;
+    }
+    .logo{
+        display: none;
+    }
+
+    .cabeçalho-direita{
+        display: none;
+    }
+
+    .menu-avançar,.menu-filtros{
+        display: none;
+    }
 
 }
 
-#img1 {
-	position: relative;
-	width: 30%;
-	left: 50%;
-	top: 30%;
-	transform: translate(-50%);
+@media only screen and (min-width: 680px) and (max-width: 1040px){
+    .ofertas{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
 }
 
-#menu {
-	position: absolute;
-	width: 50%;
-	left: 50%;
-	top: 10%;
-	transform: translate(-50%);
+
+
+@media only screen and (min-width: 1005px) and (max-width: 1350px){
+    .ofertas{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
 }
 
-#resto {
-	background-color: #003153;
-	position: absolute;
-	display: inline-block;
-	width: 100%;
-	top: 60%;
-	height: 100%;
-	left: 0;
-	right: 0;
-	
-}
-
-#resto p {
-	color: lightgray;
-	font-family: sans-serif;
-	font-size: 13px;
-	margin-top: 4%; 
-	margin-left: 10%; 
-}
-
-#mover img {
-	left:  10%; 
-	width: 25%;
-	right: 10%;
-	position: relative;
+@media only screen and (min-width: 1005px){
+    .rodape-celular{
+        display: none;
+    }
 }
