@@ -36,7 +36,7 @@ $connection = connection();
 $connection->query(
     "CREATE TABLE IF NOT EXISTS plans(
         id INTEGER PRIMARY KEY AUTO_INCREMENT,
-        planName TEXT,
+        planName VARCHAR(45),
         planDuration INT,
         planCost FLOAT)"
 );
@@ -45,31 +45,31 @@ $connection->query(
 $connection->query(
     "CREATE TABLE IF NOT EXISTS members(
         id INTEGER PRIMARY KEY AUTO_INCREMENT,
-        name TEXT,
-        user TEXT,
+        name VARCHAR(45),
+        user VARCHAR(45),
         age INT,
-        email TEXT,
-        password TEXT,
-        type TEXT, 
+        email VARCHAR(45),
+        password VARCHAR(45),
+        type VARCHAR(45), 
         plan INT,
         foreign key (plan) references plans(id))"
 );
 
-$connection->query(
+$connection->query(http://192.168.0.125:8000/
     "CREATE TABLE IF NOT EXISTS partners(
         id INTEGER PRIMARY KEY AUTO_INCREMENT,
-        name TEXT,
+        name VARCHAR(45),
         age INT,
-        email TEXT,
-        function TEXT)"
+        email VARCHAR(45),
+        functioon VARCHAR(45))"
 );
 
 $connection->query(
     "CREATE TABLE IF NOT EXISTS products(
         id INTEGER PRIMARY KEY AUTO_INCREMENT,
-        name TEXT,
+        name VARCHAR(45),
         description INT,
-        supplier TEXT,
+        supplier VARCHAR(45),
         price INT)"
 );
 
