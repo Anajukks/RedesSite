@@ -8,7 +8,7 @@ $database = 'gmyfit';
 
 function connection() {
     global $host, $username, $password, $database;
-    $conn = new mysqli($host, $username, $password, $database, 3307);
+    $conn = new mysqli($host, $username, $password, $database, 3306); 
 
     if ($conn->connect_error) {
         die("Falha na conexão com o banco de dados: " . $conn->connect_error);
