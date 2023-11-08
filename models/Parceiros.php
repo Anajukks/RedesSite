@@ -23,7 +23,7 @@ class Parceiros{
     }
 
     function save (string $name, int $age, string $email, string $function){
-        $query = "INSERT INTO partners (name, age, email, function) values(?, ?, ?, ?)";
+        $query = "INSERT INTO partners (name, age, email, functioon) values(?, ?, ?, ?)";
 
         $stmt = $this->connection->prepare($query);
         $stmt->bind_param("siss", $name, $age, $email, $function);
@@ -48,7 +48,7 @@ class Parceiros{
                 'name' => $partners['name'],
                 'age' => $partners['age'],
                 'email' => $partners['email'],
-                'function' => $partners['function'],
+                'functioon' => $partners['functioon'],
             ]);
         }
         return $partners_list;
